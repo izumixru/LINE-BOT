@@ -5,7 +5,7 @@ $accessToken = 'fP+JfiO9YOKkddAPqTRWrcZWE6k1H7VMgNRLEq2ZW8rK+qsw1vwe9bS9N+pD5jdY
 //ユーザーからのメッセージ取得
 $json_string = file_get_contents('php://input');
 $json_object = json_decode($json_string);
-var_dump($json_object);
+error_log(print_r($json_object,true));
 
 
 //取得データ
