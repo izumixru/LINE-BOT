@@ -1,20 +1,3 @@
-Skip to content
-
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @izumixru Sign out
-0
-0 0 yasaisan/sample_bot
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights
-sample_bot/bot_sample/call_back/call_back.php
-4d35a07  9 minutes ago
-@yasaisan yasaisan no message
-
-50 lines (40 sloc)  1.82 KB
 <?php
 
 $accessToken = 'fP+JfiO9YOKkddAPqTRWrcZWE6k1H7VMgNRLEq2ZW8rK+qsw1vwe9bS9N+pD5jdYoO8j7KERUIUnTr7Al6N/xZbQUvSbLcUeLL22ff7Bylx0lAFfU3rTAOQxkz3Ra7MbKYthsHhjWQvR8UBKtbUTzgdB04t89/1O/w1cDnyilFU=';
@@ -63,16 +46,3 @@ function sending_messages($accessToken, $replyToken, $message_type, $return_mess
     $result = curl_exec($ch);
     curl_close($ch);
 }
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
-Press h to open a hovercard with more details.
