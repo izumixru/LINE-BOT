@@ -16,7 +16,7 @@ $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => CHANNEL_SECRET]);
 $signature = $_SERVER['HTTP_' . \LINE\LINEBot\Constant\HTTPHeader::LINE_SIGNATURE];
 
 // 署名が正当かチェック。政党であればリクエストをパースし配列へ
-$events = $bot->parseEventRequest(filie_get_contents('php://input'),$signature);
+$events = $bot->parseEventRequest(file_get_contents('php://input'),$signature);
 
 // 配列に格納された各イベントをループで処理
 foreach($events as $event){
